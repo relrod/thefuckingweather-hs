@@ -12,10 +12,10 @@ import Text.HTML.TagSoup
 type FuckingWeather = IO String
 
 theFuckingWeather :: String -> FuckingWeather
-theFuckingWeather l = (simpleHTTP $ getRequest ("http://thefuckingweather.com/?where=" ++ l)) >>= getResponseBody
+theFuckingWeather l = simpleHTTP (getRequest ("http://thefuckingweather.com/?where=" ++ l)) >>= getResponseBody
 
 parseWeather :: FuckingWeather -> String -> IO String
-parseWeather w s = fromTagText . (!! 1) . head . (sections (~== s)) <$> parseTags <$> w
+parseWeather w s = fromTagText . (!! 1) . head . sections (~== s) <$> parseTags <$> w
 
 theFuckingSummary :: FuckingWeather -> IO String
 theFuckingSummary w = parseWeather w "<p class=remark>"
