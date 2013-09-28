@@ -1,4 +1,4 @@
-module Network.TheFuckingWeather(
+module Web.TheFuckingWeather(
     theFuckingWeather
   , theFuckingSummary
   , theFuckingFlavor

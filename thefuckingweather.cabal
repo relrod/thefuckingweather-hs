@@ -6,10 +6,10 @@ license:             BSD3
 license-file:        LICENSE
 author:              Richard Elrod
 maintainer:          ricky@elrod.me
-category:            Network
+category:            Web
 build-type:          Simple
 cabal-version:       >=1.8
 
 library
-  exposed-modules:     Network.TheFuckingWeather
-  build-depends:       base ==4.6.*
+  exposed-modules:     Web.TheFuckingWeather
+  build-depends:       base ==4.6.*, tagsoup, HTTP
