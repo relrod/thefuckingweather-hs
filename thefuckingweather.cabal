@@ -1,0 +1,15 @@
+name:                thefuckingweather
+version:             1.0.0
+synopsis:            A Haskell client to thefuckingweather.com
+homepage:            http://github.com/CodeBlock/thefuckingweather-hs
+license:             BSD3
+license-file:        LICENSE
+author:              Richard Elrod
+maintainer:          ricky@elrod.me
+category:            Network
+build-type:          Simple
+cabal-version:       >=1.8
+
+library
+  exposed-modules:     Network.TheFuckingWeather
+  build-depends:       base ==4.6.*
