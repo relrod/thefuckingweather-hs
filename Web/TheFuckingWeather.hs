@@ -7,7 +7,6 @@ module Web.TheFuckingWeather(
 import Control.Applicative
 import Control.Monad
 import Network.HTTP
-import Network.Stream (Result)
 import Text.HTML.TagSoup
 
 type FuckingWeather = IO String
