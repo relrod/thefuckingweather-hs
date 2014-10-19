@@ -1,7 +1,7 @@
 name:                thefuckingweather
 version:             1.0.0
 synopsis:            A Haskell client to thefuckingweather.com
-homepage:            http://github.com/CodeBlock/thefuckingweather-hs
+homepage:            http://github.com/relrod/thefuckingweather-hs
 license:             BSD3
 license-file:        LICENSE
 author:              Richard Elrod
